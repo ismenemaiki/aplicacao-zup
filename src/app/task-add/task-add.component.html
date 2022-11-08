@@ -1,0 +1,11 @@
+<div class="box">
+  <form [formGroup]="form" (ngSubmit)="onSubmit()">
+    <div class="content">
+      <label for="content">
+        Tarefa:
+      </label>
+      <input id="content" type="text" formControlName="content">
+    </div>
+    <button class="button" type="submit">Incluir</button>
+  </form>
+</div>

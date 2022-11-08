@@ -1,0 +1,18 @@
+<div class="box">
+  <form [formGroup]="form" (ngSubmit)="onSubmit()">
+    <div class="content">
+      <label for="content">
+        Tarefa
+      </label>
+      <input id="content" type="text" formControlName="content">
+    </div>
+    <div class="finished">
+      <label for="finished">
+        Concluido?
+      </label>
+      <input type="checkbox" name="finished" id="finished"
+        (change)="this.form.value.finished = !this.form.value.finished">
+    </div>
+    <button class="button" type="submit">Salvar</button>
+  </form>
+</div>

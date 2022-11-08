@@ -1,0 +1,23 @@
+@use "../../styles.scss" as s;
+
+.box {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid gray;
+  width: 450px;
+  padding: 20px;
+  margin: 0 auto
+}
+h1 {
+  @include s.title;
+}
+h2 {
+  @include s.subtitle;
+}
+button {
+  @include s.button;
+  margin: 0 auto;
+}
+.item  {
+  @include s.item;
+}

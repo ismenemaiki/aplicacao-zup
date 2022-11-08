@@ -1,0 +1,25 @@
+@use "../../styles.scss" as s;
+
+.box {
+  border: 2px solid gray;
+  width: 450px;
+  height: 150px;
+  padding: 20px;
+  margin: 0 auto
+}
+button {
+  @include s.button;
+  margin-top: 20px
+}
+.item  {
+  @include s.item;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  & .content > input{
+    height: 40px;
+    width: 100%;
+    border-radius: 10px;
+  }
+}

@@ -1,0 +1,27 @@
+<div class="box">
+  <h1>Quadro de tarefas</h1>
+  <h2>Tarefas pendentes</h2>
+  <div *ngFor="let task of pendingList">
+    <div class="item" (click)="selectItem(task.id)">
+      <span>
+        id: {{ task?.id }}
+      </span>
+      <span>
+        tarefa: {{ task?.content }}
+      </span>
+    </div>
+  </div>
+  <hr>
+  <h2>Tarefas completadas</h2>
+  <div *ngFor="let task of completeList">
+    <div class="item" (click)="selectItem(task.id)">
+      <span>
+        id: {{ task?.id }}
+      </span>
+      <span>
+        tarefa: {{ task?.content }}
+      </span>
+    </div>
+  </div>
+  <button [routerLink]="'add'">Adicionar Task</button>
+</div>
